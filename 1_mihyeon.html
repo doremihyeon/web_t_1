@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {}
+
+        #div1 {}
+
+        ul {}
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <form>
+            <legend>회원가입</legend>
+            <ul>
+                <li>
+                    <label for="uid">ID</label>
+                    <input type="text" id="uid">
+                </li>
+                <li>
+                    <lable for="pwd">패스워드</lable>
+                    <input type="password" id="pwd" placeholder="영숫자조합 10자">
+                </li>
+                <li>
+                    <lable for="umail">이메일</lable>
+                    <input type="email" id="umail">
+                </li>
+                <li>
+                    <label for="sport">참가종목 </label>
+                    <input id="sport" type="checkbox" name="mihyeon1">축구
+                    <input id="sport" type="checkbox" name="mihyeon2">농구
+                    <input id="sport" type="checkbox" name="mihyeon3" checked>100M
+                    <input id="sport" type="checkbox" name="mihyeon4">테니스
+                </li>
+                <li>
+                    <label for="friend">친구이름</label>
+                    <select id="friend">
+                        <option>김미현</option>
+                        <option>김해운</option>
+                        <option>길영진</option>
+                        <option>김운성</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="age">나이선택 : </label>
+                    <input id="age" name="age1" type="radio">10대
+                    <input id="age" name="age1" type="radio">20대
+                    <input id="age" name="age1" type="radio">30대
+                </li>
+                <li>
+                    <lable for="memo">건의사항</lable><br>
+                    <textarea cols="20" rows="3"></textarea>
+                </li>
+                <button type="submit">회원가입</button>
+                <button type="reset">가입취소</button>
+            </ul>
+        </form>
+    </div>
+</body>
+
+</html>
