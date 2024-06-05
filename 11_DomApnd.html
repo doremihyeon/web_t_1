@@ -1,26 +1,41 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-  <meta charset="UTF-8">
-  <title>DOM</title>
+  <meta charset="UTF-8"> <!-- 문서의 문자 인코딩을 UTF-8로 설정 -->
+  <title>DOM</title> <!-- 문서의 제목을 설정 -->
   <style>
-  span {border:2pt dotted;
-  background-color:yellow}
+    /* span 요소의 스타일 설정 */
+    span {
+      border: 2pt dotted;
+      /* 점선 테두리 스타일 지정 */
+      background-color: yellow;
+      /* 배경색 지정 */
+    }
   </style>
 </head>
+
 <body>
-  <input type=button onclick="this.onclick='';" value="Span 태그 추가하기"><p>
-  <div id="content"></div>
+  <!-- 버튼 요소 추가 -->
+  <input type=button onclick="spanAdd();  this.onclick='';" value="Span 태그 추가하기">
+  <p> <!-- 문단 요소 추가 -->
+  <div id="content"></div> <!-- content id를 가진 div 요소 추가 -->
 
   <script>
+    // span 태그를 추가하는 함수
     function spanAdd() {
-      const newSpan = ;
-      const spanText = ;
-	  const output = document.getElementById("content");
-
-
+      // 새로운 span 요소 생성
+      const newSpan = document.createElement('span');
+      // span 요소에 텍스트 노드 추가
+      const spanText = document.createTextNode("span 태그의 텍스트");
+      // content id를 가진 div 요소 가져오기
+      const output = document.getElementById("content");
+      // 텍스트 노드를 span 요소에 추가
+      newSpan.appendChild(spanText);
+      // span 요소를 content 요소에 추가
+      output.appendChild(newSpan);
     }
   </script>
 </body>
-</html>
 
+</html>

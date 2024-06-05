@@ -3,32 +3,62 @@
 
 <head>
     <style>
-        * {}
+        /* 모든 요소에 box-sizing, margin, padding 설정 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-        #div1 {}
+        /* div1의 너비와 중앙 정렬 설정 */
+        #div1 {
+            width: 480px;
+            margin: 40px auto;
+        }
 
-        ul {}
+        /* ul 요소의 리스트 스타일과 왼쪽 패딩 설정 */
+        ul {
+            list-style-type: none;
+            padding-left: 5px;
+        }
+
+        /* option id를 가진 요소 내의 li 요소 내 label의 정렬 설정 */
+        #option li label {
+            text-align: center;
+            float: left;
+        }
+
+        /* send id를 가진 요소의 디스플레이 설정과 아래쪽 마진 설정 */
+        #send {
+            display: flex;
+            margin-bottom: 8px;
+        }
     </style>
 </head>
 
 <body>
     <div id="div1">
+        <!-- 회원가입 폼 시작 -->
         <form>
             <legend>회원가입</legend>
             <ul>
                 <li>
+                    <!-- 사용자 ID 입력란 -->
                     <label for="uid">ID</label>
                     <input type="text" id="uid">
                 </li>
                 <li>
-                    <lable for="pwd">패스워드</lable>
+                    <!-- 패스워드 입력란 -->
+                    <label for="pwd">패스워드</label>
                     <input type="password" id="pwd" placeholder="영숫자조합 10자">
                 </li>
                 <li>
-                    <lable for="umail">이메일</lable>
+                    <!-- 이메일 입력란 -->
+                    <label for="umail">이메일</label>
                     <input type="email" id="umail">
                 </li>
                 <li>
+                    <!-- 참가 종목 체크박스 -->
                     <label for="sport">참가종목 </label>
                     <input id="sport" type="checkbox" name="mihyeon1">축구
                     <input id="sport" type="checkbox" name="mihyeon2">농구
@@ -36,6 +66,7 @@
                     <input id="sport" type="checkbox" name="mihyeon4">테니스
                 </li>
                 <li>
+                    <!-- 친구 이름 선택 드롭다운 -->
                     <label for="friend">친구이름</label>
                     <select id="friend">
                         <option>김미현</option>
@@ -45,19 +76,23 @@
                     </select>
                 </li>
                 <li>
+                    <!-- 나이 선택 라디오 버튼 -->
                     <label for="age">나이선택 : </label>
                     <input id="age" name="age1" type="radio">10대
                     <input id="age" name="age1" type="radio">20대
                     <input id="age" name="age1" type="radio">30대
                 </li>
                 <li>
-                    <lable for="memo">건의사항</lable><br>
+                    <!-- 건의사항 텍스트 에어리어 -->
+                    <label for="memo">건의사항</label><br>
                     <textarea cols="20" rows="3"></textarea>
                 </li>
+                <!-- 회원가입 및 가입취소 버튼 -->
                 <button type="submit">회원가입</button>
                 <button type="reset">가입취소</button>
             </ul>
         </form>
+        <!-- 회원가입 폼 종료 -->
     </div>
 </body>
 

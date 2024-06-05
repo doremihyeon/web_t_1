@@ -1,18 +1,31 @@
 <!doctype html>
 <html lang="en">
- <head>
-  <meta charset="UTF-8">
- </head>
- <body>
-  <form name="name_form" onsubmit="process()">
-   <input type="text" name="gildong" size="10" autofocus/>
-   <input type="submit"></input>
-</form>
-<script>
-function process()
-{
 
-}
-</script>
- </body>
+<head>
+   <meta charset="UTF-8">
+</head>
+
+<body>
+   <!-- 폼 정의, onsubmit 이벤트를 통해 form 제출 시 process 함수 호출 -->
+   <form name="name_form" onsubmit="return process()">
+      <!-- 이름 입력 필드, 폼 로드 시 자동으로 포커스됨 -->
+      <input type="text" name="mihyeon" size="10" autofocus />
+      <!-- 제출 버튼 -->
+      <input type="submit"></input>
+   </form>
+   <script>
+      // form이 제출될 때 호출되는 함수
+      function process() {
+         // name이 'mihyeon'인 입력 필드의 값을 가져옴
+         var inputs = document.forms["name_form"]["mihyeon"].value;
+
+         // 입력된 이름과 메시지를 문서에 씀
+         document.write(inputs + "<b style='text-decoration-line: underline; font-weight: lighter;'>님. 안녕하세요!!</b>");
+
+         // 폼 제출을 막기 위해 false 반환
+         return false;
+      }
+   </script>
+</body>
+
 </html>

@@ -1,17 +1,30 @@
 <!doctype html>
 <html lang="en">
- <head>
+
+<head>
   <meta charset="UTF-8">
 
-<script>
-window.onload=function() {
-	function(){
+  <script>
+    // 페이지가 로드되면 실행되는 함수
+    window.onload = function () {
+      // 'mihyeon' ID를 가진 버튼 요소를 가져옴
+      var button = document.getElementById('mihyeon');
 
-  }
-};
-</script>
- </head>
+      // 버튼에 클릭 이벤트 리스너 추가
+      button.addEventListener('click', clicks);
+
+      // 클릭 이벤트가 발생했을 때 실행되는 함수
+      function clicks() {
+        // '전송버튼 클릭됨' 메시지를 문서에 씀
+        document.write("전송버튼 클릭됨");
+      }
+    };
+  </script>
+</head>
+
 <body>
-<input type="button" id="gildong" value="전송"/>
- </body>
+  <!-- 전송 버튼 정의, ID는 'mihyeon' -->
+  <input type="button" id="mihyeon" value="전송" />
+</body>
+
 </html>

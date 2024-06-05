@@ -1,48 +1,78 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <style>
-    #my_layout{
-	  width: 450px;
-
-
-  }
-  .box{
-    padding: 15px;
-    color: #fff;
-    font-weight: bold;
-    text-align: center;
-  }   
-  .box1 {
-    background-color: #3689ff;
-    grid-area: gildong1;
-  }
-  .box2 {
-    background-color: #00cf12;
-    grid-area: gildong2;
-  }
-  .box3 {
-    background-color: #ff9019;
-    grid-area: gildong3;
+    /* 레이아웃의 크기 및 그리드 템플릿 설정 */
+    #my_layout {
+      width: 450px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      /* 4개의 동일한 너비의 열 생성 */
+      grid-template-rows: repeat(4, 50px);
+      /* 4개의 50px 높이의 행 생성 */
+      grid-template-areas:
+        "mihyeon3 mihyeon3 mihyeon3 mihyeon3"
+        /* 첫 번째 행 */
+        "mihyeon5 mihyeon4 mihyeon4 mihyeon1"
+        /* 두 번째 행 */
+        "mihyeon5 . . mihyeon1"
+        /* 세 번째 행 */
+        "mihyeon2 mihyeon2 mihyeon2 mihyeon2";
+      /* 네 번째 행 */
     }
-  .box4 {
-    background-color: #ffd000;
-    grid-area: gildong4;
-  }
-  .box5 {
-    background-color: #00ffff;
-    grid-area: gildong5;
-  }
+
+    /* 박스의 기본 스타일 설정 */
+    .box {
+      padding: 15px;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    /* box1에 대한 스타일 및 그리드 영역 설정 */
+    .box1 {
+      background-color: #3689ff;
+      grid-area: mihyeon1;
+    }
+
+    /* box2에 대한 스타일 및 그리드 영역 설정 */
+    .box2 {
+      background-color: #00cf12;
+      grid-area: mihyeon2;
+    }
+
+    /* box3에 대한 스타일 및 그리드 영역 설정 */
+    .box3 {
+      background-color: #ff9019;
+      grid-area: mihyeon3;
+    }
+
+    /* box4에 대한 스타일 및 그리드 영역 설정 */
+    .box4 {
+      background-color: #ffd000;
+      grid-area: mihyeon4;
+    }
+
+    /* box5에 대한 스타일 및 그리드 영역 설정 */
+    .box5 {
+      background-color: #00ffff;
+      grid-area: mihyeon5;
+    }
   </style>
 </head>
+
 <body>
-  <div id="">
-    <div class="box box1">홍길동1</div>
-    <div class="box box2">홍길동2</div> 
-    <div class="box box3">홍길동3</div>
-    <div class="box box4">홍길동4</div>
-    <div class="box box5">홍길동5</div>
+  <!-- 그리드 레이아웃을 담고 있는 div 요소 -->
+  <div id="my_layout">
+    <!-- 각각의 박스 요소 -->
+    <div class="box box1">김미현4</div>
+    <div class="box box2">김미현5</div>
+    <div class="box box3">김미현2</div>
+    <div class="box box4">김미현3</div>
+    <div class="box box5">김미현1</div>
   </div>
 </body>
+
 </html>

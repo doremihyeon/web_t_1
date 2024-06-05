@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-</head>
-<body>
-  <h3>홍길동 영역</h3>
-  <script>
-	const name_area = document.querySelector()
-    name_area = function(){
 
+<head>
+  <meta charset="UTF-8"> <!-- 문서의 문자 인코딩을 UTF-8로 설정 -->
+</head>
+
+<body>
+  <h3>김미현 영역</h3> <!-- "김미현 영역"이라는 헤딩 제목 -->
+  <script>
+    // h3 요소를 가져와서 변수에 저장
+    const name_area = document.querySelector('h3');
+
+    // h3 요소를 클릭했을 때 실행되는 함수
+    name_area.onclick = function () {
+      // 문서에 빨간색으로 텍스트가 표시되는 단락 추가
+      document.write("<p style = 'color: red'>이름을 클릭함</p>");
     }
   </script>
 </body>
+
 </html>

@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8"> <!-- 문서의 문자 인코딩을 UTF-8로 설정 -->
 </head>
+
 <body>
-	<button id="gildong">글자색 바꾸기</button>
-	<b>컴퓨터공학과</b><b>홍길동</b>
+	<!-- 글자색을 바꾸는 버튼 -->
+	<button id="mihyeon">글자색 바꾸기</button>
+	<!-- 첫 번째 굵은 글자 -->
+	<b>컴퓨터공학과</b>
+	<!-- 두 번째 굵은 글자 -->
+	<b>김미현</b>
 	<script>
-    document.querySelector().onclick = text_color;
-	function {
-       document.querySelectorAll();
-    }
+		// 버튼 클릭 시 호출되는 함수
+		document.querySelector("#mihyeon").onclick = text_color;
+		function text_color() {
+			// 모든 굵은 글자 요소를 가져옴
+			var colors = document.querySelectorAll('b');
+
+			// 첫 번째 굵은 글자의 색상을 빨간색으로 변경
+			colors[0].style.color = "red";
+			// 두 번째 굵은 글자의 색상을 파란색으로 변경
+			colors[1].style.color = "blue";
+		}
 	</script>
 </body>
-</html>  
+
+</html>

@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-	<meta charset="UTF-8">
+  <meta charset="UTF-8"> <!-- 문서의 문자 인코딩을 UTF-8로 설정 -->
 </head>
-<body>
-  <span>
-	홍길동 이벤트
+
+<body id="dblclick"> <!-- body 요소에 id 속성 "dblclick" 추가 -->
+  <span> <!-- span 요소에 텍스트 "김미현 이벤트" 포함 -->
+    김미현 이벤트
   </span>
-  
-<script>
-	const class_event = ;
-	addEventListener(,function() {
-      document.write("더블클릭 event 발생")
+
+  <script>
+    // span 요소를 가져와 변수에 저장
+    const class_event = document.getElementsByTagName('span')[0];
+
+    // body 요소에 더블클릭 이벤트 리스너 추가
+    addEventListener("dblclick", function () {
+      // 더블클릭 이벤트가 발생했을 때 문서에 텍스트 출력
+      document.write("더블클릭 event 발생");
     });
-</script>
+  </script>
 </body>
+
 </html>

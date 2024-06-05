@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-	<meta charset="UTF-8">
+  <meta charset="UTF-8"> <!-- 문서의 문자 인코딩을 UTF-8로 설정 -->
 </head>
+
 <body>
-<b class="gildong">홍길동 이벤트</b>	
-  
-<script>
-	const over = document.getElementsByClassName("");
-	addEventListener(false);
-    
+  <b class="mihyeon">김미현 이벤트</b> <!-- 굵은 글자 요소에 클래스명 "mihyeon" 부여 -->
+
+  <script>
+    // 클래스명이 "mihyeon"인 요소를 가져와 변수에 저장
+    const over = document.getElementsByClassName("mihyeon")[0];
+
+    // 가져온 요소에 마우스 오버 이벤트 리스너 추가
+    over.addEventListener("mouseover", overEvent, false);
+
+    // 마우스 오버 이벤트가 발생했을 때 실행되는 함수
     function overEvent() {
-      document.write("mouseover event 발생")
+      document.write("mouseover event 발생"); // "mouseover event 발생"을 문서에 출력
     }
 
-</script>
+  </script>
 </body>
+
 </html>
