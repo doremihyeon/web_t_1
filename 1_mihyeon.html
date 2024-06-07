@@ -38,26 +38,26 @@
                 <legend style="font-weight: bold;">회원가입</legend> <br>
                 <ul id="option">
                     <li>
-                        <label for="id">ID </label>
+                        <label for="id">-ID </label>
                         <input id="id" type="text" placeholder="이름입력" autocomplete="true" autofocus>
                     </li>
                     <li>
-                        <label for="password">패스워드 </label>
+                        <label for="password">-패스워드 </label>
                         <input id="password" type="text" placeholder="영숫자조합 10자">
                     </li>
                     <li>
-                        <label for="email">이메일 </label>
+                        <label for="email">-이메일 </label>
                         <input id="email" type="email">
                     </li>
                     <li>
-                        <label for="sport">참가종목 </label>
+                        <label for="sport">-참가종목 </label>
                         <input id="sport" type="checkbox" name="mihyeon1">축구
                         <input id="sport" type="checkbox" name="mihyeon2">농구
                         <input id="sport" type="checkbox" name="mihyeon3" checked>100M
                         <input id="sport" type="checkbox" name="mihyeon4">테니스
                     </li>
                     <li>
-                        <label for="friend">친구이름 </label>
+                        <label for="friend">-친구이름 </label>
                         <select id="friend">
                             <option>김미현</option>
                             <option>김해운</option>
@@ -66,17 +66,20 @@
                         </select>
                     </li>
                     <li>
-                        <label for="age">나이선택 : </label>
-                        <input id="age_10" name="age1" type="radio">
-                        <label for="age_10">10대</label>
-                        <input id="age_20" name="age1" type="radio" checked>
-                        <label for="age_20">20대</label>
-                        <input id="age_30" name="age1" type="radio">
-                        <label for="age_30">30대</label>
+                        <label for="age">-나이선택 : </label>
+
+                        <label for="age_10"><input id="age_10" name="age1" type="radio">10대</label>
+
+                        <label for="age_20"><input id="age_20" name="age1" type="radio" checked>20대</label>
+
+                        <label for="age_30"><input id="age_30" name="age1" type="radio">30대</label>
                     </li>
-                    <label for="memo">건의사항</label><br>
+                    <br><label for="memo">-건의사항</label><br>
                     <textarea id="memo" rows="3" cols="20"></textarea>
+
+
                 </ul>
+
                 <div id="send">
                     <input type="submit" value="회원가입">
                     <input type="reset" value="가입취소" style="margin-left: 5px;">
